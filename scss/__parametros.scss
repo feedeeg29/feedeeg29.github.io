@@ -1,0 +1,19 @@
+@mixin tamaños {
+    height: auto;
+    width: 400px;}
+
+@mixin flex($ali,$jus,$tali,$padd,$pos) {
+    align-self: $ali;
+    justify-content: $jus;
+    text-align: $tali;
+    padding: $padd;
+    position: $pos;}
+html{
+        width: 100%;
+        height: 100%;
+        background-color: #353333;}
+$estilos:(
+    color: #d663a3,
+    margen: 0px 5px 5px 0px,
+    borde: solid 3px #000000,
+    )

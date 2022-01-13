@@ -1,0 +1,25 @@
+{
+  "name": "nueva-carpeta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/stilo.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feedeeg29/ProyectoFinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feedeeg29/ProyectoFinal/issues"
+  },
+  "homepage": "https://github.com/feedeeg29/ProyectoFinal#readme",
+  "description": ""
+}
