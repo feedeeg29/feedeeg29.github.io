@@ -258,10 +258,14 @@ html {
       grid-area: calzado_15;
       place-content: center; }
     .main_galeria img {
+      justify-self: center;
+      justify-content: center;
+      place-content: center;
       max-height: 100%;
       max-width: 300px;
       border: 3px solid black;
-      border-radius: 30px; }
+      border-radius: 30px;
+      gap: 5px; }
   #main {
     min-height: 78vh; }
     #main .carousel-inner .carousel-item img {
