@@ -217,50 +217,35 @@ html {
     .main_galeria #img_1 {
       grid-area: calzado_1; }
     .main_galeria #img_2 {
-      grid-area: calzado_2;
-      place-content: center; }
+      grid-area: calzado_2; }
     .main_galeria #img_3 {
-      grid-area: calzado_3;
-      place-content: center; }
+      grid-area: calzado_3; }
     .main_galeria #img_4 {
-      grid-area: calzado_4;
-      place-content: center; }
+      grid-area: calzado_4; }
     .main_galeria #img_5 {
-      grid-area: calzado_5;
-      place-content: center; }
+      grid-area: calzado_5; }
     .main_galeria #img_6 {
-      grid-area: calzado_6;
-      place-content: center; }
+      grid-area: calzado_6; }
     .main_galeria #img_6 {
-      grid-area: calzado_6;
-      place-content: center; }
+      grid-area: calzado_6; }
     .main_galeria #img_7 {
-      grid-area: calzado_7;
-      place-content: center; }
+      grid-area: calzado_7; }
     .main_galeria #img_8 {
-      grid-area: calzado_8;
-      place-content: center; }
+      grid-area: calzado_8; }
     .main_galeria #img_9 {
-      grid-area: calzado_9;
-      place-content: center; }
+      grid-area: calzado_9; }
     .main_galeria #img_10 {
-      grid-area: calzado_10;
-      place-content: center; }
+      grid-area: calzado_10; }
     .main_galeria #img_11 {
-      grid-area: calzado_11;
-      place-content: center; }
+      grid-area: calzado_11; }
     .main_galeria #img_12 {
-      grid-area: calzado_12;
-      place-content: center; }
+      grid-area: calzado_12; }
     .main_galeria #img_13 {
-      grid-area: calzado_13;
-      place-content: center; }
+      grid-area: calzado_13; }
     .main_galeria #img_14 {
-      grid-area: calzado_14;
-      place-content: center; }
+      grid-area: calzado_14; }
     .main_galeria #img_15 {
-      grid-area: calzado_15;
-      place-content: center; }
+      grid-area: calzado_15; }
     .main_galeria img {
       max-height: 100%;
       max-width: 300px;
