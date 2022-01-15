@@ -11,7 +11,7 @@ html {
     max-width: 100%;
     border: solid 3px black;
     font-family: 'Mochiy Pop P One', sans-serif; }
-  .body__contacto {
+  .body_contacto {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -81,58 +81,39 @@ html {
     padding: 0px 10px 0px 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    place-content: center;
-    justify-content: center;
     grid-template-areas: "calzado_1" "calzado_2"  "calzado_3" "calzado_4" "calzado_5" "calzado_6" "calzado_7" "calzado_8" "calzado_9" "calzado_10" "calzado_11" "calzado_12" "calzado_13" "calzado_14" "calzado_15"; }
     .main_galeria #img_1 {
-      grid-area: calzado_1;
-      place-content: center; }
+      grid-area: calzado_1; }
     .main_galeria #img_2 {
-      grid-area: calzado_2;
-      place-content: center; }
+      grid-area: calzado_2; }
     .main_galeria #img_3 {
-      grid-area: calzado_3;
-      place-content: center; }
+      grid-area: calzado_3; }
     .main_galeria #img_4 {
-      grid-area: calzado_4;
-      place-content: center; }
+      grid-area: calzado_4; }
     .main_galeria #img_5 {
-      grid-area: calzado_5;
-      place-content: center; }
+      grid-area: calzado_5; }
     .main_galeria #img_6 {
-      grid-area: calzado_6;
-      place-content: center; }
+      grid-area: calzado_6; }
     .main_galeria #img_6 {
-      grid-area: calzado_6;
-      place-content: center; }
+      grid-area: calzado_6; }
     .main_galeria #img_7 {
-      grid-area: calzado_7;
-      place-content: center; }
+      grid-area: calzado_7; }
     .main_galeria #img_8 {
-      grid-area: calzado_8;
-      place-content: center; }
+      grid-area: calzado_8; }
     .main_galeria #img_9 {
-      grid-area: calzado_9;
-      place-content: center; }
+      grid-area: calzado_9; }
     .main_galeria #img_10 {
-      grid-area: calzado_10;
-      place-content: center; }
+      grid-area: calzado_10; }
     .main_galeria #img_11 {
-      grid-area: calzado_11;
-      place-content: center; }
+      grid-area: calzado_11; }
     .main_galeria #img_12 {
-      grid-area: calzado_12;
-      place-content: center; }
+      grid-area: calzado_12; }
     .main_galeria #img_13 {
-      grid-area: calzado_13;
-      place-content: center; }
+      grid-area: calzado_13; }
     .main_galeria #img_14 {
-      grid-area: calzado_14;
-      place-content: center;
-      place-self: center; }
+      grid-area: calzado_14; }
     .main_galeria #img_15 {
-      grid-area: calzado_15;
-      place-content: center; }
+      grid-area: calzado_15; }
     .main_galeria img {
       max-height: 100%;
       width: 100%;
@@ -142,14 +123,16 @@ html {
 
 @media screen and (min-width: 992px) {
   #header {
+    display: flex;
+    justify-content: center;
     height: 70px;
-    background-color: #b65584;
+    background-image: linear-gradient(to right, #086972, #F7F7F7);
     padding: 0px;
     width: 100%;
     max-width: 100%;
     border: solid 3px black;
     font-family: 'Mochiy Pop P One', sans-serif; }
-  .body__contacto {
+  .body_contacto {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -167,7 +150,8 @@ html {
     .Contacto .formulario {
       display: flex;
       border: none;
-      max-width: 250px; }
+      max-width: 250px;
+      border: solid 30px #ffebcd; }
     .Contacto .campo {
       margin: 0.75rem; }
       .Contacto .campo label {
