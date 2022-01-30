@@ -1,0 +1,336 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #353333, #9D9D9D); }
+
+@media screen and (min-width: 1px) and (max-width: 991px) {
+  #header {
+    background-image: linear-gradient(to right, #086972, #F7F7F7);
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+    border: solid 3px black;
+    font-family: 'Mochiy Pop P One', sans-serif; }
+  .footer {
+    align-self: flex-end;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    display: flex;
+    background-image: linear-gradient(to left, #086972, #F7F7F7);
+    border: solid 3px black;
+    margin: 0px 5px 5px 0px;
+    width: 100%; }
+  .body_contacto {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #353333;
+    display: grid; }
+  .Contacto {
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    align-self: center;
+    font-family: 'Mochiy Pop P One', sans-serif; }
+    .Contacto .formulario {
+      display: flex;
+      border: none;
+      max-width: 250px; }
+    .Contacto .campo {
+      margin: 0.75rem; }
+      .Contacto .campo label {
+        display: block; }
+      .Contacto .campo input {
+        padding: 0.3rem;
+        width: 100%; }
+      .Contacto .campo textarea {
+        width: 100%;
+        max-width: 100%;
+        resize: vertical;
+        font-family: 'Mochiy Pop P One', sans-serif; }
+  #zona {
+    border: blanchedalmond solid 1p x; }
+  #letras {
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center; }
+  .body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: #353333; }
+  #main {
+    min-height: 78vh; }
+    #main .container h1 {
+      justify-self: center; }
+  .carousel-inner {
+    padding-top: 1px; }
+    .carousel-inner .carousel-item img {
+      max-height: 100%;
+      max-width: 100%;
+      border: 3px solid black;
+      border-radius: 30px; }
+  .main_galeria {
+    display: grid;
+    background-color: #353333;
+    padding: 0px 10px 0px 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "calzado_1" "calzado_2"  "calzado_3" "calzado_4" "calzado_5" "calzado_6" "calzado_7" "calzado_8" "calzado_9" "calzado_10" "calzado_11" "calzado_12" "calzado_13" "calzado_14" "calzado_15"; }
+    .main_galeria #img_1 {
+      grid-area: calzado_1; }
+    .main_galeria #img_2 {
+      grid-area: calzado_2; }
+    .main_galeria #img_3 {
+      grid-area: calzado_3; }
+    .main_galeria #img_4 {
+      grid-area: calzado_4; }
+    .main_galeria #img_5 {
+      grid-area: calzado_5; }
+    .main_galeria #img_6 {
+      grid-area: calzado_6; }
+    .main_galeria #img_6 {
+      grid-area: calzado_6; }
+    .main_galeria #img_7 {
+      grid-area: calzado_7; }
+    .main_galeria #img_8 {
+      grid-area: calzado_8; }
+    .main_galeria #img_9 {
+      grid-area: calzado_9; }
+    .main_galeria #img_10 {
+      grid-area: calzado_10; }
+    .main_galeria #img_11 {
+      grid-area: calzado_11; }
+    .main_galeria #img_12 {
+      grid-area: calzado_12; }
+    .main_galeria #img_13 {
+      grid-area: calzado_13; }
+    .main_galeria #img_14 {
+      grid-area: calzado_14; }
+    .main_galeria #img_15 {
+      grid-area: calzado_15; }
+    .main_galeria img {
+      max-height: 100%;
+      width: 100%;
+      max-width: 500px;
+      border: 3px solid black;
+      border-radius: 30px; } }
+
+@media screen and (min-width: 992px) {
+  #header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-image: linear-gradient(to right, #086972, #F7F7F7);
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+    border: solid 3px black;
+    font-family: 'Mochiy Pop P One', sans-serif; }
+  .body_contacto {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: #353333; }
+  .Contacto {
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    align-self: center;
+    font-family: 'Mochiy Pop P One', sans-serif; }
+    .Contacto .formulario {
+      display: flex;
+      border: none;
+      max-width: 250px;
+      border: solid 30px #ffebcd; }
+    .Contacto .campo {
+      margin: 0.75rem; }
+      .Contacto .campo label {
+        display: block; }
+      .Contacto .campo input {
+        padding: 0.3rem;
+        width: 100%; }
+      .Contacto .campo textarea {
+        width: 100%;
+        max-width: 100%;
+        resize: vertical;
+        font-family: 'Mochiy Pop P One', sans-serif; }
+  #letras {
+    color: #ffebcd;
+    display: flex;
+    justify-content: center; }
+  #zona {
+    border: #ffebcd solid 1px; }
+  .body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #353333; }
+  .animate__animated {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 1s; }
+  .footer {
+    align-self: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    display: flex;
+    background-image: linear-gradient(to left, #086972, #F7F7F7);
+    border: solid 3px #000000;
+    width: 100%;
+    margin: 0px 5px 5px 0px; }
+  .main_galeria {
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    place-items: center;
+    padding: 20px 10px 0px 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+    grid-template-areas: "calzado_1 calzado_2 calzado_3" "calzado_4 calzado_5 calzado_6" "calzado_7 calzado_8 calzado_9" "calzado_10 calzado_11 calzado_12" "calzado_13 calzado_14 calzado_15"; }
+    .main_galeria #img_1 {
+      grid-area: calzado_1; }
+    .main_galeria #img_2 {
+      grid-area: calzado_2; }
+    .main_galeria #img_3 {
+      grid-area: calzado_3; }
+    .main_galeria #img_4 {
+      grid-area: calzado_4; }
+    .main_galeria #img_5 {
+      grid-area: calzado_5; }
+    .main_galeria #img_6 {
+      grid-area: calzado_6; }
+    .main_galeria #img_6 {
+      grid-area: calzado_6; }
+    .main_galeria #img_7 {
+      grid-area: calzado_7; }
+    .main_galeria #img_8 {
+      grid-area: calzado_8; }
+    .main_galeria #img_9 {
+      grid-area: calzado_9; }
+    .main_galeria #img_10 {
+      grid-area: calzado_10; }
+    .main_galeria #img_11 {
+      grid-area: calzado_11; }
+    .main_galeria #img_12 {
+      grid-area: calzado_12; }
+    .main_galeria #img_13 {
+      grid-area: calzado_13; }
+    .main_galeria #img_14 {
+      grid-area: calzado_14; }
+    .main_galeria #img_15 {
+      grid-area: calzado_15; }
+    .main_galeria img {
+      max-height: 100%;
+      max-width: 300px;
+      border: 3px solid black;
+      border-radius: 30px; }
+  #main {
+    min-height: 78vh;
+    background-image: linear-gradient(to bottom, black, white); }
+    #main .carousel-inner .carousel-item img {
+      max-height: 78vh;
+      max-width: 100%;
+      border: 3px solid #000000;
+      border-radius: 30px; } }
+
+@media screen and (min-width: 280px) and (max-width: 283px) {
+  #main {
+    min-height: 73vh; }
+  .carousel-inner {
+    padding-top: 35px; }
+    .carousel-inner .carousel-item img {
+      max-height: 100%;
+      max-width: 100%;
+      border: 3px solid #000000;
+      border-radius: 30px; } }
+
+@media screen and (min-width: 320px) and (max-width: 325px) {
+  #main {
+    min-height: 69vh; }
+  .carousel-inner #main {
+    min-height: 73.5vh; }
+  .carousel-inner .carousel-item img {
+    max-height: 54.5vh;
+    max-width: 100%;
+    border: 3px solid #000000;
+    border-radius: 30px; } }
+
+@media screen and (min-width: 360px) and (max-width: 365px) {
+  .carousel-inner {
+    padding: 25px 0px 10px 30px; }
+    .carousel-inner .carousel-item img {
+      max-height: 59.5vh;
+      max-width: 100%; } }
+
+@media screen and (min-width: 375px) and (max-width: 380px) and (min-height: 666px) and (max-height: 668px) {
+  #main {
+    min-height: 73.5vh; }
+  .carousel-inner {
+    padding-left: 25px; }
+    .carousel-inner .carousel-item img {
+      max-height: 60vh;
+      max-width: 100%; } }
+
+@media screen and (min-width: 374px) and (max-width: 380px) and (min-height: 811px) and (max-height: 813px) {
+  #main {
+    min-height: 77.5vh; }
+    #main .container .carousel-inner {
+      padding-top: 35px; }
+      #main .container .carousel-inner .carousel-item img {
+        max-height: 60vh;
+        max-width: 100%; } }
+
+@media screen and (min-width: 411px) and (max-width: 415px) {
+  #main {
+    min-height: 78vh; }
+  .carousel-inner {
+    padding-top: 1px; }
+    .carousel-inner .carousel-item img {
+      max-height: 100%;
+      max-width: 100%; } }
+
+@media screen and (min-width: 411px) and (max-width: 415px) and (min-height: 730px) and (max-height: 732px) {
+  #main {
+    max-height: 78vh; }
+  .carousel-inner {
+    padding-top: 1px; }
+    .carousel-inner .carousel-item img {
+      max-height: 65vh;
+      max-width: 100%; } }
+
+@media screen and (min-width: 540px) and (max-width: 541px) {
+  #main {
+    max-height: 78vh; }
+  .carousel-inner {
+    padding-top: 1px; }
+    .carousel-inner .carousel-item img {
+      max-height: 65vh;
+      max-width: 100%; } }
+
+@media screen and (min-width: 1023px) and (max-height: 600px) {
+  .carousel-inner .carousel-item img {
+    max-height: 70vh;
+    max-width: 100%; } }
+
+@media screen and (min-width: 1023px) and (min-height: 601px) and (max-height: 1367px) {
+  .carousel-inner .carousel-item img {
+    max-width: 100%; } }
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+  .carousel-inner .carousel-item img {
+    max-height: 68vh;
+    max-width: 100%; } }
