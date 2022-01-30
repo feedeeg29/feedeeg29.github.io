@@ -75,7 +75,7 @@ img{
     border-radius: 30px;}}}
     .main_galeria{
         display: grid;
-        background-color: #353333;
+        background-image: linear-gradient(black, white);
         padding: 0px 10px 0px 10px;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -209,7 +209,6 @@ textarea{
     place-content: center;
     justify-content: center;
     place-items: center;
-    // background-color: #353333;
     padding: 20px 10px 0px 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 33% 33% 33% ;
