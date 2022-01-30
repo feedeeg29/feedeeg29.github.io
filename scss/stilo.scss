@@ -39,6 +39,7 @@ textarea{
     resize: vertical;
     font-family: 'Mochiy Pop P One', sans-serif;}}}
 #letras{
+    background-color: black;
     color: blanchedalmond;
     display: flex;
     justify-content: center;}
@@ -203,11 +204,12 @@ textarea{
     width: 100%;
     margin: map-get($estilos, margen);}
 .main_galeria{
+    background-image: linear-gradient( black, white);
     display: grid;
     place-content: center;
     justify-content: center;
     place-items: center;
-    background-color: #353333;
+    // background-color: #353333;
     padding: 20px 10px 0px 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 33% 33% 33% ;
