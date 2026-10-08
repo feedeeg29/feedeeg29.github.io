@@ -1,0 +1,335 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 7.5rem 0 4.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+/* ---------- Texto ---------- */
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 1rem 0.45rem 0.8rem;
+  margin-bottom: 1.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: inset 0 1px 0 var(--glass-highlight);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.pulse {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+}
+
+.pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #34d399;
+  animation: ping 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.eyebrow {
+  margin-bottom: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(3.3rem, 8.6vw, 7rem);
+  font-weight: 700;
+  line-height: 0.93;
+  letter-spacing: -0.055em;
+}
+
+.last {
+  padding-bottom: 0.08em;
+  background: var(--gradient-brand);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 9s ease-in-out infinite alternate;
+}
+
+.title {
+  margin-top: 1.4rem;
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.tagline {
+  max-width: 34rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.techChip {
+  padding: 0.38rem 0.85rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--glass-bg);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- Escenario 3D ---------- */
+
+.stage {
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+}
+
+.glow {
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--color-accent-2) 38%, transparent),
+    transparent 72%
+  );
+  filter: blur(26px);
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ring1 {
+  inset: 3%;
+  border: 1px dashed var(--color-border-strong);
+  opacity: 0.4;
+  animation: spin 70s linear infinite;
+}
+
+.ring1::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent-2);
+  box-shadow: 0 0 16px var(--color-accent-2);
+}
+
+.ring2 {
+  inset: 17%;
+  border: 1px solid var(--color-border);
+  animation: spin 110s linear infinite reverse;
+}
+
+.canvasWrap {
+  position: absolute;
+  inset: -4%;
+}
+
+.fallback {
+  position: absolute;
+  inset: 22%;
+  border-radius: 50%;
+  background: conic-gradient(from 120deg, var(--color-accent), var(--color-accent-2), var(--color-accent-3), var(--color-accent));
+  filter: blur(8px);
+  opacity: 0.85;
+  animation: spin 24s linear infinite;
+}
+
+.floating {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-pill);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-highlight);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.chipA {
+  top: 11%;
+  left: -2%;
+}
+
+.chipB {
+  bottom: 20%;
+  right: -3%;
+}
+
+.chipC {
+  bottom: 3%;
+  left: 12%;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dotViolet {
+  background: var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+.dotPink {
+  background: var(--color-accent-2);
+  box-shadow: 0 0 10px var(--color-accent-2);
+}
+
+.dotPeach {
+  background: var(--color-accent-3);
+  box-shadow: 0 0 10px var(--color-accent-3);
+}
+
+/* ---------- Indicador de scroll ---------- */
+
+.scrollHint {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-left: -21px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-strong);
+  background: var(--glass-bg);
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  animation: bob 2.4s ease-in-out infinite;
+  transition: color 0.25s var(--ease-out), border-color 0.25s var(--ease-out);
+}
+
+.scrollHint:hover {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 6.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stage {
+    justify-self: center;
+    max-width: 440px;
+  }
+
+  .scrollHint {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .floating {
+    display: none;
+  }
+
+  .stage {
+    max-width: 340px;
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}

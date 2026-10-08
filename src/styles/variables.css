@@ -1,0 +1,90 @@
+:root {
+  color-scheme: dark;
+
+  /* Paleta · modo oscuro (default): "aurora" violeta → rosa → durazno */
+  --color-bg: #07050f;
+  --color-bg-rgb: 7, 5, 15;
+  --color-bg-alt: #0d0a1a;
+  --color-text: #f5f3ff;
+  --color-text-muted: #b0abcc;
+  --color-accent: #c4b5fd;
+  --color-accent-2: #f9a8d4;
+  --color-accent-3: #fdba74;
+  --color-border: rgba(255, 255, 255, 0.1);
+  /* Borde reforzado (>= 3:1) para el límite de controles interactivos (WCAG 1.4.11) */
+  --color-border-strong: rgba(255, 255, 255, 0.42);
+
+  --gradient-brand: linear-gradient(110deg, #c4b5fd 0%, #f0abfc 45%, #fdba74 100%);
+  --btn-gradient: linear-gradient(110deg, #c4b5fd 0%, #f0abfc 55%, #fdba74 100%);
+  --btn-text: #130a26;
+  --btn-shadow: 0 14px 40px -12px rgba(240, 171, 252, 0.55);
+
+  /* Vidrio */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-hover: rgba(255, 255, 255, 0.085);
+  --glass-border: rgba(255, 255, 255, 0.13);
+  --glass-highlight: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.8);
+  --glass-blur: 18px;
+
+  /* Fondo ambiental */
+  --orb-1: rgba(124, 58, 237, 0.5);
+  --orb-2: rgba(219, 39, 119, 0.34);
+  --orb-3: rgba(249, 115, 22, 0.2);
+  --grid-line: rgba(255, 255, 255, 0.035);
+
+  /* Tipografía */
+  --font-display: "Bricolage Grotesque Variable", "Inter Variable", system-ui, sans-serif;
+  --font-sans: "Inter Variable", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "Fira Code", ui-monospace, monospace;
+
+  /* Espaciado */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: clamp(5rem, 11vw, 9rem);
+
+  /* Layout */
+  --max-width: 1180px;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Transiciones */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Modo claro: se activa poniendo data-theme="light" en <html> */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --color-bg: #f7f5ff;
+  --color-bg-rgb: 247, 245, 255;
+  --color-bg-alt: #ffffff;
+  --color-text: #1a1233;
+  --color-text-muted: #5b5478;
+  --color-accent: #6d28d9;
+  --color-accent-2: #be185d;
+  --color-accent-3: #c2410c;
+  --color-border: rgba(26, 18, 51, 0.12);
+  --color-border-strong: rgba(26, 18, 51, 0.55);
+
+  --gradient-brand: linear-gradient(110deg, #6d28d9 0%, #be185d 55%, #c2410c 100%);
+  --btn-gradient: linear-gradient(110deg, #6d28d9 0%, #be185d 100%);
+  --btn-text: #ffffff;
+  --btn-shadow: 0 14px 36px -12px rgba(190, 24, 93, 0.5);
+
+  --glass-bg: rgba(255, 255, 255, 0.66);
+  --glass-bg-hover: rgba(255, 255, 255, 0.86);
+  --glass-border: rgba(109, 40, 217, 0.16);
+  --glass-highlight: rgba(255, 255, 255, 0.95);
+  --glass-shadow: 0 22px 50px -26px rgba(76, 29, 149, 0.4);
+
+  --orb-1: rgba(167, 139, 250, 0.55);
+  --orb-2: rgba(244, 114, 182, 0.4);
+  --orb-3: rgba(253, 186, 116, 0.45);
+  --grid-line: rgba(26, 18, 51, 0.045);
+}

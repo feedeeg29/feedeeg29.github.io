@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  background: var(--btn-gradient);
+  color: var(--btn-text);
+  font-size: 1.4rem;
+  box-shadow: var(--btn-shadow);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.institution {
+  margin-top: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.period {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--glass-border);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-accent);
+}

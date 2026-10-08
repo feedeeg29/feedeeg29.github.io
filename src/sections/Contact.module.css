@@ -1,0 +1,82 @@
+.panel {
+  padding: clamp(2.25rem, 6vw, 4.5rem) clamp(1.25rem, 5vw, 4rem);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.glow {
+  position: absolute;
+  inset: auto -10% -55% -10%;
+  height: 80%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--color-accent-2) 32%, transparent),
+    transparent 75%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.text {
+  max-width: 34rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.email {
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3.4vw, 2.1rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 1px solid var(--color-border-strong);
+  transition: border-color 0.3s var(--ease-out);
+}
+
+.email:hover {
+  border-color: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.socialLink {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-strong);
+  background: var(--glass-bg);
+  font-size: 1.2rem;
+  transition:
+    transform 0.3s var(--ease-out),
+    border-color 0.3s var(--ease-out),
+    color 0.3s var(--ease-out);
+}
+
+.socialLink:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
