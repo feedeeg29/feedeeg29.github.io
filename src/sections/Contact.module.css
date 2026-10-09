@@ -1,0 +1,65 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.25rem) clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.text {
+  max-width: 32rem;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.email {
+  margin-top: 1.75rem;
+  font-size: clamp(1.15rem, 3.4vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border-strong);
+  transition: border-color 0.2s ease;
+}
+
+.email:hover {
+  border-color: var(--color-accent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.social {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 1.15rem;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.socialLink:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}

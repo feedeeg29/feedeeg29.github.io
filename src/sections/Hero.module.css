@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 7rem 0 5rem;
+  overflow: hidden;
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* Se desvanece hacia los bordes para que el texto siempre sea legible */
+  -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 50%, #000 25%, transparent 85%);
+  mask-image: radial-gradient(ellipse 70% 65% at 50% 50%, #000 25%, transparent 85%);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pill {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-bg) 70%, transparent);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.75rem;
+  font-size: clamp(3.1rem, 11vw, 6.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.last {
+  color: var(--color-accent);
+}
+
+.title {
+  margin-top: 1.75rem;
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+  font-weight: 500;
+}
+
+.tagline {
+  max-width: 36rem;
+  margin-top: 0.9rem;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2.25rem;
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  transform: translateX(-50%);
+  color: var(--color-text-muted);
+  font-size: 1.3rem;
+  animation: nudge 2.4s ease-in-out infinite;
+}
+
+.scrollHint:hover {
+  color: var(--color-accent);
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 6px);
+  }
+}
+
+@media (max-width: 480px) {
+  .pill {
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+  }
+}

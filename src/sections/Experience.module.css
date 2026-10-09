@@ -1,0 +1,61 @@
+.list {
+  border-top: 1px solid var(--color-border);
+}
+
+.list > li {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.entry {
+  display: grid;
+  gap: 0.75rem 2.5rem;
+  grid-template-columns: 1fr;
+  padding: 2rem 0;
+}
+
+.period {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.role {
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.company {
+  margin-top: 0.3rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.bullets {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+}
+
+.bullet {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.bullet::before {
+  content: "";
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 6px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+@media (min-width: 800px) {
+  .entry {
+    grid-template-columns: 200px 1fr;
+  }
+}

@@ -1,0 +1,61 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.segment {
+  display: inline-flex;
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+}
+
+.segmentBtn {
+  padding: 0.28rem 0.65rem;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.segmentBtn:hover {
+  color: var(--color-text);
+}
+
+.segmentBtn.active {
+  background: var(--color-btn);
+  color: var(--color-btn-text);
+}
+
+.themeBtn {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  background: transparent;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.themeBtn:hover {
+  border-color: var(--color-accent);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+}
